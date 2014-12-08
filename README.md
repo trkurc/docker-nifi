@@ -5,9 +5,13 @@ Dockerfile to build a nifi container image
 
 ## Version
 
-Current version: 0.0.1-SNAPSHOT - built from apache nifi commit 
+Current version: 0.0.1-SNAPSHOT - built from apache nifi commit 4d998c12c95a6e5ce3d66c0d861e75e33b5cf013
 
 # Quick Start
+
+### Warning 
+
+This will open listening ports - ensure that your host OS has protections in place such that the port is only open to machines you know about, e.g. with a firewall like iptables (I recommend that you configure your firewall to only allow localhost access to ports 8080 and 8081 for test purposes))
 
 You can launch the image using the docker command line
 
